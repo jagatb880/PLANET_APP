@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/min_height"
+    android:paddingBottom="@dimen/padding_bottom"
+    android:paddingTop="@dimen/padding_top">
+    <ImageView
+        android:layout_width="15dp"
+        android:id="@+id/indicator"
+        android:src="@drawable/high_praiority"
+        android:layout_gravity="center"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="6dp"
+        android:clickable="false"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/complainId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginRight="@dimen/img_margin_right"
+        android:paddingLeft="5dp"
+        android:layout_weight="2"
+        android:text="Complain ID" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_weight="4"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingLeft="5dp"
+        android:paddingRight="@dimen/textview_pad_right"
+        android:text="Sl No. "
+        android:textColor="#6a6a6a"
+        android:textSize="@dimen/textview_text_size" />
+    
+    <ImageView
+        android:layout_width="25dp"
+        android:id="@+id/assign_complain"
+        android:src="@drawable/transfer"
+        android:layout_marginRight="20dp"
+        android:clickable="false"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+

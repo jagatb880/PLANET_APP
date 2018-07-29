@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+
+        <LinearLayout
+            android:id="@+id/child_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/main_layout_padding">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:src="@drawable/logo" />
+
+
+            <LinearLayout
+                android:id="@+id/alreadyLoginLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/login_button_layout_margin_top"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/register_complain"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:longClickable="false"
+                    android:focusable="false"
+                    android:background="@drawable/prelogin_edittext_back"
+                    android:backgroundTint="@color/edit_text_background_color"
+                    android:drawableLeft="@drawable/agent_precomplain_drawable_left"
+                    android:paddingLeft="20dp"
+                    android:text="Register A Complain"
+                    android:textColor="@color/text_color"
+                    android:layout_marginBottom="17dp"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="18dp" />
+
+
+                <EditText
+                    android:id="@+id/Agent_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:longClickable="false"
+                    android:focusable="false"
+                    android:background="@drawable/prelogin_edittext_back"
+                    android:backgroundTint="@color/edit_text_background_color"
+                    android:drawableLeft="@drawable/agent_prelogin_drawable_left"
+                    android:hint="Email"
+                    android:paddingLeft="20dp"
+                    android:text="Employee Login"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+

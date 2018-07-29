@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dp"
+    android:background="#efefef"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="8dp">
+
+    <TextView
+        android:id="@+id/sl_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:layout_gravity="center"
+        android:paddingRight="3dp"
+        android:text="Sl No."
+        android:textColor="#6a6a6a"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/complain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:layout_gravity="center"
+        android:paddingRight="3dp"
+        android:text="Product"
+        android:paddingLeft="3dp"
+        android:textColor="#6a6a6a"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/service_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.8"
+        android:layout_gravity="center"
+        android:paddingRight="3dp"
+        android:text="Complain Info"
+        android:paddingLeft="5dp"
+        android:textColor="#6a6a6a"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/action"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/eye" />
+</LinearLayout>
+
+

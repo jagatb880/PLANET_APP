@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/new_customer_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/mobile_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/bacc_tint"
+                android:hint="Mob No.*"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <EditText
+                android:id="@+id/name_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:hint="Customer Name *"
+                android:paddingLeft="@dimen/email_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+
+            <EditText
+                android:id="@+id/address_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:hint="Address *"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <EditText
+                android:id="@+id/dop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:drawableLeft="@drawable/calendar"
+                android:focusable="false"
+                android:hint="  Date Of Purchase *"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <Spinner
+                android:id="@+id/product"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:popupBackground="#ffffff"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <Spinner
+                android:id="@+id/model"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:popupBackground="#ffffff"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/issue_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:hint="Issue Details *"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <Spinner
+                android:id="@+id/service_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:popupBackground="#ffffff"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <EditText
+                android:id="@+id/new_bill_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:hint="Bill No."
+                android:paddingLeft="@dimen/password_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <EditText
+                android:id="@+id/new_dealer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:hint="Dealer Name."
+                android:paddingLeft="@dimen/password_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+
+            <Button
+                android:id="@+id/create_new"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_logo_height"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_radious"
+                android:text="Create"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/login_button_text_size" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+

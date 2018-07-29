@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/min_height"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_bottom"
+    android:paddingLeft="@dimen/padding_left"
+    android:paddingTop="@dimen/padding_top">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="8"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Bibhu Prasad Jena"
+            android:textColor="#6a6a6a"
+            android:textSize="@dimen/textview_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="9876543217"
+            android:textColor="#6a6a6a"
+            android:textSize="@dimen/textview_text_size"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Pdt : CImny"
+            android:textColor="#6a6a6a"
+            android:textSize="@dimen/textview_text_size"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Bbsr"
+            android:textColor="#6a6a6a"
+            android:textSize="@dimen/textview_text_size"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/is_positive"
+        android:layout_width="0dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/action"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/eye" />
+
+
+</LinearLayout>
+
+

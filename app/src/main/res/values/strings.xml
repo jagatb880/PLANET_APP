@@ -1,0 +1,56 @@
+<resources>
+
+    <string name="app_name">Planet Appliances</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_dashboard">Dashboard</string>
+    <string name="nav_item_task_assigned">Task Assigned</string>
+    <string name="nav_item_customer_feedback">Add Enquiry</string>
+
+    <string name="nav_item_complain_with_bill">Complaint</string>
+    <string name="nav_item_complain_without_bill">Complains Without Bill No</string>
+    <string name="nav_item_amc_list">AMC List</string>
+
+    <string name="nav_item_customer_enquery_list">Enquiry List</string>
+    <string name="nav_item_register_amc">Register AMC</string>
+    <string name="nav_item_add_complain">Add New Complain</string>
+    <string name="nav_item_changepassword">Change Password</string>
+    <string name="nav_item_logout">Logout</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_dashboard</item>
+        <item>@string/nav_item_task_assigned</item>
+        <item>@string/nav_item_customer_feedback</item>
+
+        <item>@string/nav_item_complain_with_bill</item>
+        <item>@string/nav_item_complain_without_bill</item>
+        <item>@string/nav_item_amc_list</item>
+
+        <item>@string/nav_item_customer_enquery_list</item>
+        <item>@string/nav_item_register_amc</item>
+        <item>@string/nav_item_add_complain</item>
+        <item>@string/nav_item_changepassword</item>
+        <item>@string/nav_item_logout</item>
+    </string-array>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_task_assigned">Task Assigned</string>
+    <string name="title_customer_feedback">Add Enquiry</string>
+
+    <string name="title_complain_with_bill">Complaint</string>
+    <string name="title_complain_without_bill">Complains Without Bill No</string>
+    <string name="title_amc_list">AMC List</string>
+
+    <string name="title_customer_enquery_list">Enquiry List</string>
+    <string name="title_register_amc">Register AMC</string>
+    <string name="title_add_complain">Add New Complain</string>
+
+    <string name="title_change_password">Change Password</string>
+    <string name="title_logout">Logout</string>
+
+
+</resources>

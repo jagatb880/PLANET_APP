@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#1c7768"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:paddingTop="3dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/planet_sales_image_width"
+                        android:layout_height="@dimen/planet_sales_image_height"
+                        android:layout_marginTop="10dp"
+                        android:clickable="false"
+                        android:src="@drawable/complain_image" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:minLines="2"
+                    android:text="Existing Customer"
+                    android:textSize="@dimen/complain_text_sixe" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#d4d4d4"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:paddingTop="3dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/planet_sales_image_width"
+                        android:layout_height="@dimen/planet_sales_image_height"
+                        android:layout_marginTop="10dp"
+                        android:clickable="false"
+                        android:src="@drawable/complain_image" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:minLines="2"
+                    android:text="New Customer"
+                    android:textSize="@dimen/complain_text_sixe" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#d4d4d4"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:paddingTop="3dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="@dimen/planet_sales_image_width"
+                        android:layout_height="@dimen/planet_sales_image_height"
+                        android:layout_marginTop="10dp"
+                        android:clickable="false"
+                        android:src="@drawable/planet_enq" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:minLines="2"
+                    android:text="Enquery"
+                    android:textSize="@dimen/complain_text_sixe" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/exist_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/child_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/cid"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/complian_edittext_back"
+                    android:hint="Customer ID"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/bill_no"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/complian_edittext_back"
+                    android:digits="0987654321"
+                    android:hint="Mobile No."
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <Button
+                    android:id="@+id/product_button"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="#1c7768"
+                    android:text="Search"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/details_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Customer Details"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ABAAAF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/customer_details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/locattion_margin_right"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="@dimen/phone_image_width"
+                        android:layout_height="@dimen/phone_image_height"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/phone_image_margin_right"
+                        android:padding="@dimen/padding"
+                        android:src="@drawable/customer_name" />
+
+                    <TextView
+                        android:id="@+id/customer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="jmes Rai disoja"
+                        android:textColor="#858686"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/locattion_margin_right"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="@dimen/phone_image_width"
+                        android:layout_height="@dimen/phone_image_height"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/phone_image_margin_right"
+                        android:padding="@dimen/padding"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Idco Tower , Mancheswar Instratila Istate Tower PIN : 752002"
+                        android:textColor="#858686"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mobile_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/locattion_margin_right"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="@dimen/phone_image_width"
+                        android:layout_height="@dimen/phone_image_height"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/phone_image_margin_right"
+                        android:padding="@dimen/padding"
+                        android:src="@drawable/mobile" />
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="+91 7205181047"
+                        android:textColor="#858686"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/email_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/locattion_margin_right"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="@dimen/phone_image_width"
+                        android:layout_height="@dimen/phone_image_height"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/phone_image_margin_right"
+                        android:padding="@dimen/padding"
+                        android:src="@drawable/new_email" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="this@gmail.com"
+                        android:textColor="#858686"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/product_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Product Details"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ABAAAF" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="45dp"
+                android:layout_marginTop="15dp"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/submit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/issue"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:background="@drawable/complian_edittext_back"
+                android:hint="Enter Your Issue Details...."
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#1c7768"
+                android:text="Submit"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/new_customer_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/mobile_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:hint="Mob No.*"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <EditText
+                android:id="@+id/name_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:hint="Customer Name *"
+                android:paddingLeft="@dimen/email_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+
+            <EditText
+                android:id="@+id/address_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:hint="Address *"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <EditText
+                android:id="@+id/dop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:drawableLeft="@drawable/calendar"
+                android:focusable="false"
+                android:hint="  Date Of Purchase *"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <Spinner
+                android:id="@+id/product"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:popupBackground="#ffffff"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <Spinner
+                android:id="@+id/model"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:popupBackground="#ffffff"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <EditText
+                android:id="@+id/issue_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:hint="Issue Details *"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <Spinner
+                android:id="@+id/service_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:paddingLeft="@dimen/password_padding_left"
+                android:popupBackground="#ffffff"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <EditText
+                android:id="@+id/new_bill_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:hint="Bill No."
+                android:paddingLeft="@dimen/password_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+            <EditText
+                android:id="@+id/new_dealer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_margin_top"
+                android:backgroundTint="@color/bacc_tint"
+                android:hint="Dealer Name."
+                android:paddingLeft="@dimen/password_padding_left"
+                android:textColor="@color/add_customer_text_color"
+                android:textColorHint="@color/add_customer_text_hint_color"
+                android:textSize="@dimen/email_password_text_size" />
+
+
+            <Button
+                android:id="@+id/create_new"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_logo_height"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_radious"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/login_button_text_size" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/enc_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/name_enc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/bacc_tint"
+                        android:hint="Customer Name *"
+                        android:paddingLeft="@dimen/email_padding_left"
+                        android:textColor="@color/add_customer_text_color"
+                        android:textColorHint="@color/add_customer_text_hint_color"
+                        android:textSize="@dimen/email_password_text_size" />
+
+
+                    <EditText
+                        android:id="@+id/mobile_enc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/password_margin_top"
+                        android:backgroundTint="@color/bacc_tint"
+                        android:hint="Phone *"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/password_padding_left"
+                        android:textColor="@color/add_customer_text_color"
+                        android:textColorHint="@color/add_customer_text_hint_color"
+                        android:textSize="@dimen/email_password_text_size" />
+
+                    <EditText
+                        android:id="@+id/address_enc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/password_margin_top"
+                        android:backgroundTint="@color/bacc_tint"
+                        android:hint="Address *"
+                        android:paddingLeft="@dimen/password_padding_left"
+                        android:textColor="@color/add_customer_text_color"
+                        android:textColorHint="@color/add_customer_text_hint_color"
+                        android:textSize="@dimen/email_password_text_size" />
+
+                    <EditText
+                        android:id="@+id/email_enc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/password_margin_top"
+                        android:backgroundTint="@color/bacc_tint"
+                        android:hint="Email"
+                        android:paddingLeft="@dimen/password_padding_left"
+                        android:textColor="@color/add_customer_text_color"
+                        android:textColorHint="@color/add_customer_text_hint_color"
+                        android:textSize="@dimen/email_password_text_size" />
+
+                    <Spinner
+                        android:id="@+id/product_enc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/password_margin_top"
+                        android:backgroundTint="@color/bacc_tint"
+                        android:paddingLeft="@dimen/password_padding_left"
+                        android:popupBackground="#ffffff"
+                        android:textColor="@color/add_customer_text_color"
+                        android:textColorHint="@color/add_customer_text_hint_color"
+                        android:textSize="@dimen/email_password_text_size" />
+
+                    <EditText
+                        android:id="@+id/cs_feed_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/agent_feedback_view_height"
+                        android:background="@drawable/complian_edittext_back"
+                        android:hint="Enter Your Message .. *"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/add_customer_text_color"
+                        android:textColorHint="@color/add_customer_text_hint_color"
+                        android:textSize="@dimen/email_password_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/is_positive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Positive Enquiry"
+                        android:textSize="@dimen/email_password_text_size" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toolbar_logo_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/button_radious"
+                    android:text="Submit Enquiry"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/login_button_text_size" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
